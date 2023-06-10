@@ -1,0 +1,248 @@
+comments in python 
+single line comments : starts from hastag sign 
+# This is single line comment
+
+multiline comment :  starts from triple quotes and ends with quotes
+
+'''
+this 
+is 
+multiline
+comment
+'''
+
+
+-----------------------------------------------------------------------
+Assigning the value in python and changing it 
+  
+
+  site_name  = 'romitp4l.wordpress.com'
+  print (site_name)
+
+  # assigning a new value to the same variable 
+  site_name = 'google.com'
+  print(site_name)
+
+
+  ______________________________________________++++++++++++++______________________________________________
+
+
+# assigning multiple values to multiple variables
+a, b, c = 4,3,7
+
+
+++++++++++++_____________________________________________+++++++++++++++++++++++++++++++++++++_____________________________________________
+PYTHON CONSTANTS 
+ <<<<<conatant.py>>>>>>>
+
+ # declaring constants 
+ PI = 3.14
+ GRAVITY = 9.8
+
+ <<< main.py>>>
+ import constant 
+ print (constant.PI)
+ print(constant.GRAVITY)
+
+ _______________----------------------------------------------------------------_____________________________________________
+
+
+Python literals : are the fixed values in the program that can be characters , numbers or strings , etc 
+
+literals are often used to assign values to the variables or constants .
+
+========================================================================================================
+
+ 
+
+Python numeric literals
+
+1.  Decimal  : 3 , 5   : Regular Numbers 
+2.  Binary   : 0b010 , 0b11 : starts with 0b
+3.  Octal    : 0o12 , 0o13  : starts with 0o
+4.  Hexadecimal : 0x13   : starts with 0x
+5.  Floating point literals: 23.5 , 45.6 : containing floating point and decimal point 
+6.  Complex literals : 6+7j  : Numeric in the form of a+bj , where a is real and b is the imaginary part
+
+
+
+=================================================================================================
+special literal in python 
+
+
+value = None 
+
+# it is used to specify the null variable 
+
+================================+++++++++++++++++++++++++++++++++++++===============================
+LITERAL COLLECTIONS 
+
+there are four different literal collections :
+1. List 
+2. Tuple
+3. Dictionary 
+4. Set 
+
+
+-----------------------------------------------------------------------------------------------
+ 
+
+#list literal 
+ordered collection of similar or different types seprated by commas . values can be 
+accessed by the index numbers.
+
+
+#denoted by [] , 
+ fruits = ["apple", "mango","grapes"]
+ print(fruits)
+
+
+ #tuple literal
+ordered sequence of items same as a list . But the only difference is the tuples are
+immutable (can't be modified ) .
+
+
+ numbers = (3,5,8)
+ print(numbers)
+
+ #dictonary literal
+
+ Dictionary is an ordered pair collection of items . It stores items in key/value pairs.
+ here, keys are unique identifier that are associated with each value . 
+
+ alphabets = {'a':'apple', 'b':'ball', 'c':'cat'}
+ print(alphabets)
+
+ #set literal
+
+ vowels = {'a','e','i','o','u'}
+ print(vowels)
+
+ ==================================================================================
+
+ PYTHON DATA TYPES 
+
+ Data TYPES  <<<Classes    <<<<   Description
+ 1.  Numeric : int ,float , comples  :  holda numeric values 
+ 2.  String : str  : holds sequence of characters
+ 3.  Sequence : list , tuple , range : holds collection of items
+ 4.  Mapping : dict  : holds data in key value pair 
+ 5.  Boolean : bool : holds either True or False 
+ 6.  Set : set , frozenset : holds collection of unique objects 
+
+
+ note : we can use the type() function to know which class a variable or a vlaue 
+ belong to .
+  
+  Example :
+
+  num1 = 5 
+  print(num1, 'is of type ' , type(num1))
+
+  num2 = 5+5j
+  print(num2,'is of type ', type(num2))
+
+
+  ===================================================================================
+
+#Python set data type 
+Set is an unordered collection of unique items . set is defined by the values seprated
+by commas inside {} braces .
+
+#indexing has no meaning . Hence , the slicing operator [] does not work 
+
+-----------------------------------------------------------------------------------
+PYTHON TYPE CONVERSION 
+ converting data into one type to another 
+ 
+ 1. Implicit - automatic type conversion (conversion of int to float )
+ 2. Explicit - manual type conversion
+
+ Python always converts smaller datatypes to larger datatypes to avoid data loss .
+ 
+#Adddition of string using explicit type conversion
+num_string = '34'
+num_integer = 45
+
+num_string = int(num_string)
+
+
+num_sum = num_integer + num_string
+
+print("sum is :, num_sum )
+
+
+__________________________________________+++++++++++++++++++++++++++++++++++++++++__________________________________________
+
+INPUT - OUTPUT AND IMPORT IN PYTHON
+
+syntax of print 
+print(object=  seprator=  end= file= flush= )
+ m : mandotary , o : optional 
+1. object ,m  : values to be printed .
+2. sep ,o  : it allows to seprate multiple objects .
+3. end ,o : it allows to add specific values .
+4. file ,o : where the specific values are printed , it's default value is sys.stdout 
+5. flush , o : Boolean specifying if the output is flushed or buffered .default is False
+
+
+Example:
+
+print('good morning ',end = '  ' )
+
+print('new year ', 'christmas ' , 'see you soon ' , sep=' , ')
+
+------------------------------------------------------------------------------------
+OUTPUT FORMATTING 
+
+<This can be done using str.format() method >
+ x= 5
+ y =8
+  print('the value of x is {} and y is {}. format(x,y))
+
+
+  ===============================================================================
+
+  Python user input 
+
+  #input() function 
+
+  syntax : input(prompt)
+  num = input('enter a number ')
+  print('you entered : ' , num)
+
+  print('data type of the num ' , type(num))
+
+
+  NOTE:  The intered value is of string data type .
+
+
+  To convert it into integer we use explicit type conversion .
+
+
+  num = int(input('Enter a number '))
+    
+
+    --------------------------------------------------------------------------
+
+
+
+    
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
